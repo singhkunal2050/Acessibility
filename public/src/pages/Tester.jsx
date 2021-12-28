@@ -5,7 +5,7 @@ function Tester() {
   // Bind Input
   const [websiteURL, setwebsiteURL] = useState("");
   const [loadingState, setloadingState] = useState(false);
-  const [feedback ,setfeedback] = useState([1,2,3,4,5 ])
+  const [feedback ,setfeedback] = useState([])
 
 
   // Handle Submit
@@ -56,7 +56,7 @@ function Tester() {
           <form
             id="form"
             onSubmit={handleSubmit}
-            className="my-4 p-6 shadow-lg flex flex-col  sm:flex-row  justify-center bg-indigo-100 mx-4 py-10"
+            className="my-4 p-6 shadow-lg flex flex-col  sm:flex-row  justify-center bg-indigo-100 py-10"
           >
             <input
               type="url"
@@ -78,26 +78,45 @@ function Tester() {
       </div>
 
       <div className="results-section">
-        <div className={"loading-state " + (loadingState ? "" : "hidden")}>
-          <button
-            type="button"
-            class="bg-indigo-500 flex px-4 py-2 space-x-2 text-white mx-auto"
-            disabled
-          >
-            <svg
-              class="animate-spin h-5 w-5 mr-3 border-2 border-white"
-              viewBox="0 0 24 24"
-            ></svg>
-            Processing...
-          </button>
-        </div>
+        
+        <div className="container mx-auto">
 
-        {/* Results */}
-        <div className="users text-center">
-          {feedback.map((key , data) => (
-            <div id={key}  className="user">{data}</div>
-          ))}
-        </div>
+          <div className={"loading-state " + (loadingState ? "" : "hidden")}>
+            <button
+              type="button"
+              class="bg-indigo-500 flex px-4 py-2 space-x-2 text-white mx-auto"
+              disabled
+            >
+              <svg
+                class="animate-spin h-5 w-5 mr-3 border-2 border-white"
+                viewBox="0 0 24 24"
+              ></svg>
+              Processing...
+            </button>
+          </div>
+
+          {/* Results */}
+          
+          <div className="users text-center">
+            {feedback.length > 0 ? 
+            <h1 className="text-4xl font-extrabold">
+              Results
+            </h1> :
+              ""
+            }
+
+            {feedback.map((data , key) => (
+              <div id={key}  className="user shadow-lg bg-slate-100 p-4 my-4">
+                <h1>{data.message}</h1>
+                <p>
+                  <pre>
+                    {data.context}
+                  </pre>
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>  
 
       </div>
     </div>
