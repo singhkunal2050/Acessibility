@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import About from "./pages/About";
 import Tester from "./pages/Tester";
@@ -25,6 +26,8 @@ render(<main>
         </Routes>
       </div>
     </Router>
+
+    <Footer/>
 </main>,
   document.getElementById("root")
 );
