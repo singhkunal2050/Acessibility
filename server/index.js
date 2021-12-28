@@ -19,7 +19,7 @@ app.get('/api/test', cors(corsOptions)  , async (req, res)  => {
       const testResponse = await pa11y('https://singhkunal2050.dev')
       res.status(200).json(testResponse)
     }catch(err){
-      res.status(504).json({'error':'Server Issue!'})
+      res.status(504).json({'error':`Server Issue! ${err}`})
     }
   }
 })
