@@ -5,6 +5,8 @@ function Tester() {
   // Bind Input
   const [websiteURL, setwebsiteURL] = useState("");
   const [loadingState, setloadingState] = useState(false);
+  const [feedback ,setfeedback] = useState([1,2,3,4,5 ])
+
 
   // Handle Submit
   async function handleSubmit(e) {
@@ -26,6 +28,7 @@ function Tester() {
           const { issues } =  results;
           console.log(issues);
           setloadingState(false);
+          setfeedback(issues);
         }
       } catch (err) {
         setloadingState(false);
@@ -37,6 +40,12 @@ function Tester() {
       console.log("Please enter URL");
     }
   }
+
+
+
+          
+
+
 
   return (
     <div className="tester-page min-h-screen">
@@ -82,6 +91,14 @@ function Tester() {
             Processing...
           </button>
         </div>
+
+        {/* Results */}
+        <div className="users text-center">
+          {feedback.map((key , data) => (
+            <div id={key}  className="user">{data5}</div>
+          ))}
+        </div>
+
       </div>
     </div>
   );
