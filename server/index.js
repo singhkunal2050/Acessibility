@@ -1,10 +1,17 @@
 const pa11y = require('pa11y')
 const express = require('express')
 const PORT = process.env.PORT || 5000
+var cors = require('cors')
 
 const app = express()
+app.use(cors())
 
-app.get('/api/test', async (req, res)  => {
+var corsOptions = {
+  origin: 'http://localhost:3000',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+} 
+
+app.get('/api/test', cors(corsOptions)  , async (req, res)  => {
   if(!req.query.url){
     res.status(400).json({'error':'Bad Request!'})
   }else{

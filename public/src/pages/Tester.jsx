@@ -2,36 +2,51 @@ import React from "react";
 import { useState } from "react";
 
 function Tester() {
-
-  // Bind Input 
-  const [websiteURL , setwebsiteURL] =  useState('')
-  const [loadingState , setloadingState] = useState(false)
+  // Bind Input
+  const [websiteURL, setwebsiteURL] = useState("");
+  const [loadingState, setloadingState] = useState(false);
 
   // Handle Submit
-  async function handleSubmit(e){
+  async function handleSubmit(e) {
     e.preventDefault();
-    if(!websiteURL==""){
-      console.warn("Working")
-      setloadingState(!loadingState)
-      console.log(websiteURL)
+    if (!websiteURL == "") {
+      console.warn("Working");
+      setloadingState(true);
 
-    }else{
-      console.log("NO URL Sent!")
-      console.log("Please enter URL")
+      try {
+        const response = await fetch(
+          `http://localhost:5000/api/test?url=${websiteURL}`
+        );
+        if (response.status !== 200) {
+          setloadingState(false);
+          console.log("Something Went Wrong");
+        } else if (response.status == 200) {
+          console.log(response.status);
+          const results = await response.json();
+          const { issues } =  results;
+          console.log(issues);
+          setloadingState(false);
+        }
+      } catch (err) {
+        setloadingState(false);
+        console.log({ Error: err });
+      }
+      console.log(websiteURL);
+    } else {
+      console.log("NO URL Sent!");
+      console.log("Please enter URL");
     }
   }
 
-
   return (
     <div className="tester-page min-h-screen">
-      
       <div className="search-section py-5">
         <div className="container mx-auto">
           <h1 className="text-4xl font-extrabold text-center">Tester Page</h1>
 
           <form
             id="form"
-            onSubmit={handleSubmit}            
+            onSubmit={handleSubmit}
             className="my-4 p-6 shadow-lg flex flex-col  sm:flex-row  justify-center bg-indigo-100 mx-4 py-10"
           >
             <input
@@ -54,19 +69,20 @@ function Tester() {
       </div>
 
       <div className="results-section">
-
-
-      
-      <div className={"loading-state " + ( loadingState ? "" : "hidden" ) }>
-        <button type="button" class="bg-indigo-500 flex px-4 py-2 space-x-2 text-white mx-auto" disabled>
-          <svg class="animate-spin h-5 w-5 mr-3 border-2 border-white" viewBox="0 0 24 24">
-          </svg>
-          Processing...
-        </button>
+        <div className={"loading-state " + (loadingState ? "" : "hidden")}>
+          <button
+            type="button"
+            class="bg-indigo-500 flex px-4 py-2 space-x-2 text-white mx-auto"
+            disabled
+          >
+            <svg
+              class="animate-spin h-5 w-5 mr-3 border-2 border-white"
+              viewBox="0 0 24 24"
+            ></svg>
+            Processing...
+          </button>
+        </div>
       </div>
-      
-      </div>
-
     </div>
   );
 }
