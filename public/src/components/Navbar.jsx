@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="bg-indigo-900 text-white py-4 px-4 ">
       <div className="container mx-auto flex justify-between">
         <div className="text-2xl font-extrabold z-10 ">
-          <Link to="/" onClick={toogleSidebar} className="flex justify-center items-center">
+          <Link to="/" onClick={() => setsidebarState(false)} className="flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-10 w-10"
