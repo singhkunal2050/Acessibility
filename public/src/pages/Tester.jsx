@@ -95,7 +95,7 @@ function Tester() {
         {/* Results */}
         <div className="users text-center">
           {feedback.map((key , data) => (
-            <div id={key}  className="user">{data5}</div>
+            <div id={key}  className="user">{data}</div>
           ))}
         </div>
 
