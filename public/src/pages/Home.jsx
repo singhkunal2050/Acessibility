@@ -2,10 +2,20 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
-      <h1 className='text-4xl font-extrabold '>Home Page</h1>
+    <section className='home-page'>
       
-    </div>
+      <div className="hero">
+
+        <div className="container mx-auto bg-indigo-200">
+            <h1 className='text-4xl font-extrabold text-center '>Home Page</h1>
+
+        </div>
+
+      </div>
+
+      
+
+    </section>
   )
 }
 
