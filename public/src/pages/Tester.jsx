@@ -107,7 +107,7 @@ function Tester() {
 
             {feedback.map((data , key) => (
               <div id={key}  className="user shadow-lg bg-slate-100 p-4 my-4">
-                <h1>{data.message}</h1>
+                <h1 className="text-xl font-bold" >{data.message}</h1>
                 <p>
                   <pre>
                     {data.context}
