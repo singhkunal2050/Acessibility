@@ -22,7 +22,7 @@ app.get('/api/test', cors(corsOptions), async (req, res) => {
       const testResponse = await pa11y('https://singhkunal2050.dev',
         {chromeLaunchConfig: {
           ignoreHTTPSErrors: false,
-          headless: true,
+          headless: false,
           args: ['--no-sandbox', '--disable-setuid-sandbox'],
         }}
       )
