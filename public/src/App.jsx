@@ -7,13 +7,13 @@ function App() {
   return (
     <main className="App">
 
-      <Navbar />
+      {/* <Navbar />
 
         <section className="main-content min-h-screen">
 
         </section>
 
-      <Footer/>
+      <Footer/> */}
     </main>
   );
 }
