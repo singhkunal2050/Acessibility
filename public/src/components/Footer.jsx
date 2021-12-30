@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='bg-indigo-900 px-2 py-10 text-white border-t-2 border-indigo-50'>
+    <footer className='bg-white px-2 py-10 text-indigo-800 border-t-2 border-indigo-900'>
       <div className="container mx-auto flex justify-center">
         <p className='text-center flex gap-1 mx-auto'>
            Made with  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="red">

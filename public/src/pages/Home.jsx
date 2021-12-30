@@ -1,18 +1,11 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 function Home() {
   return (
-    <section className='home-page'>
+    <section className='home-page min-h-screen'>
       
-      <div className="hero min-h-screen">
-
-        <div className="container mx-auto bg-indigo-200">
-            <h1 className='text-4xl font-extrabold text-center '>Home Page</h1>
-
-        </div>
-
-      </div>
-
+        <Hero/>
       
 
     </section>

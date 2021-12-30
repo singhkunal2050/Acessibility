@@ -12,7 +12,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-indigo-900 text-white py-4 px-4 ">
+    <nav className="bg-white text-indigo-800 py-4 px-4 border-b-2 border-indigo-900 sticky top-0 z-10">
       <div className="container mx-auto flex justify-between">
         <div className="text-2xl font-extrabold z-10 ">
           <Link to="/" onClick={() => setsidebarState(false)} className="flex justify-center items-center">
@@ -40,14 +40,14 @@ function Navbar() {
           </Link>
         </div>
         <div className="menu hidden md:flex">
-            <Link className="py-2 px-4 shadow-lg hover:bg-indigo-800" to="/">Home</Link>
-            <Link className="py-2 px-4 shadow-lg hover:bg-indigo-800" to="/about">About</Link>
-            <Link className="py-2 px-4 shadow-lg hover:bg-indigo-800" to="/tester">Tester</Link>
+            <Link className="py-2 px-4   hover:bg-gray-100" to="/">Home</Link>
+            <Link className="py-2 px-4   hover:bg-gray-100" to="/about">About</Link>
+            <Link className="py-2 px-4 bg-indigo-600 text-white font-bold hover:bg-indigo-100 hover:text-indigo-600 transition-colors ease-in-out duration-300" to="/tester">Tester</Link>
         </div>
 
         <div className="hamburger-menu flex justify-center items-center md:hidden">
           <button
-            className="hamburger-menu-btn bg-indigo-600 px-2 py-1 z-10"
+            className="hamburger-menu-btn bg-white px-2 py-1 z-10"
             onClick={toogleSidebar}
           >
             <svg
@@ -69,13 +69,13 @@ function Navbar() {
 
         <div
           className={
-            "mobile-menu absolute inset-0 bg-indigo-800 flex justify-center items-center flex-col md:hidden transition-all ease-in-out duration-500 " +
+            "mobile-menu absolute inset-0 bg-white flex justify-center items-center flex-col md:hidden transition-all ease-in-out duration-500 " +
             (sidebarState ? "translate-x-0 " : "translate-x-[-100vw]")
           }
         >
-            <Link className="py-2 px-4 shadow-lg hover:bg-indigo-800" to="/" onClick={toogleSidebar}>Home</Link>
-            <Link className="py-2 px-4 shadow-lg hover:bg-indigo-800" to="/about"  onClick={toogleSidebar}>About</Link>
-            <Link className="py-2 px-4 shadow-lg hover:bg-indigo-800" to="/tester" onClick={toogleSidebar}>Tester</Link>
+            <Link className="py-2 px-4   hover:bg-gray-100" to="/" onClick={toogleSidebar}>Home</Link>
+            <Link className="py-2 px-4   hover:bg-gray-100" to="/about"  onClick={toogleSidebar}>About</Link>
+            <Link className="py-2 px-4 bg-indigo-600   hover:bg-gray-100" to="/tester" onClick={toogleSidebar}>Tester</Link>
         </div>
       </div>
     </nav>
