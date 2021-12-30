@@ -1,4 +1,5 @@
 import React from 'react'
+import { AiFillFire , AiFillBulb } from 'react-icons/ai'
 
 function USP() {
   return (
@@ -7,6 +8,13 @@ function USP() {
 
         <h2 className='text-3xl text-center font-extrabold '>Get Your Website Check in No Time!!</h2>
         <p className='text-center mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto aliquam numquam dicta vitae quisquam, maxime delectus aliquid inventore eius vero hic dignissimos quos aut libero repudiandae facere odit itaque.</p>
+
+        <div className="flex justify-center items-center py-8">
+          <AiFillFire />
+          <AiFillBulb/>
+
+        </div>
+
 
       </div>
       
