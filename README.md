@@ -8,7 +8,6 @@ herouko/oracle cloud
 - mongo db  sqllite 
 - resume revamp 
 
-
 API Data Sample
 
 ```
