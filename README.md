@@ -5,9 +5,6 @@
 react/node/auth/check accessibility
 herouko/oracle cloud 
 
-- mongo db  sqllite 
-- resume revamp 
-
 API Data Sample
 
 ```
