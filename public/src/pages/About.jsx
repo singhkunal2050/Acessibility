@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="about-page min-h-screen">
       
-      <div className="container">
+      <div className="container mx-auto">
 
         <h1 className='text-4xl font-extrabold '>About Page</h1>
 

@@ -12,10 +12,10 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-white text-indigo-800 py-4 px-4 border-b-2 border-indigo-900 sticky top-0 z-10">
+    <nav className="bg-white text-indigo-800 py-4 px-4 border-b-2 border-indigo-900 top-0 z-10 sticky">
       <div className="container mx-auto flex justify-between">
-        <div className="text-2xl font-extrabold z-10 ">
-          <Link to="/" onClick={() => setsidebarState(false)} className="flex justify-center items-center">
+        <div className="text-2xl font-extrabold z-20 ">
+          <Link to="/" onClick={() => setsidebarState(false)} className="flex justify-center items-center z-20">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-10 w-10"
@@ -47,7 +47,7 @@ function Navbar() {
 
         <div className="hamburger-menu flex justify-center items-center md:hidden">
           <button
-            className="hamburger-menu-btn bg-white px-2 py-1 z-10"
+            className="hamburger-menu-btn bg-white px-2 py-1 z-20"
             onClick={toogleSidebar}
           >
             <svg
@@ -69,7 +69,7 @@ function Navbar() {
 
         <div
           className={
-            "mobile-menu absolute inset-0 bg-white flex justify-center items-center flex-col md:hidden transition-all ease-in-out duration-500 " +
+            "mobile-menu absolute inset-0 min-h-screen bg-white flex justify-center items-center flex-col md:hidden transition-all ease-in-out duration-500 z-10 " +
             (sidebarState ? "translate-x-0 " : "translate-x-[-100vw]")
           }
         >

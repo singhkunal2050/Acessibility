@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 render(
   <>
-    <main>
+    <main className="">
       <Router>
         <div>
           <Navbar />
