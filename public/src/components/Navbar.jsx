@@ -75,7 +75,7 @@ function Navbar() {
         >
             <Link className="py-2 px-4   hover:bg-gray-100" to="/" onClick={toogleSidebar}>Home</Link>
             <Link className="py-2 px-4   hover:bg-gray-100" to="/about"  onClick={toogleSidebar}>About</Link>
-            <Link className="py-2 px-4 bg-indigo-600   hover:bg-gray-100" to="/tester" onClick={toogleSidebar}>Tester</Link>
+            <Link className="py-2 px-4 bg-indigo-600 text-white font-bold  hover:bg-gray-100" to="/tester" onClick={toogleSidebar}>Tester</Link>
         </div>
       </div>
     </nav>
