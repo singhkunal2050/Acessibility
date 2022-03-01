@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="about-page min-h-screen">
       <div className="container mx-auto">
-        <section className="prose-lg py-8">
+        <section className="prose max-w-6xl px-6 py-10 mx-auto">
           <h1 className="text-4xl font-extrabold ">Web Accessibility Checker</h1>
           <p>
             Web accessibility means that people with disabilities can equally
