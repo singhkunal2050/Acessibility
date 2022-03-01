@@ -33,6 +33,12 @@ function About() {
               "react-dom": "^17.0.2", <br />
               "react-icons": "^4.3.1",<br />
               "react-router-dom": "^6.2.1"<br />
+              "@tailwindcss/typography": "^0.5.2",
+              "@vitejs/plugin-react": "^1.0.7", <br/>
+              "autoprefixer": "^10.4.0", <br/>
+              "postcss": "^8.4.5", <br/>
+              "tailwindcss": "^3.0.7", <br/>
+              "vite": "^2.7.2" <br/>
             </pre>
 
           </code>
