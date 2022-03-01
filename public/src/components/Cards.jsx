@@ -1,4 +1,6 @@
 import React from "react";
+import { AiFillFire , AiFillBulb  , AiFillCloud , AiFillTrophy, AiFillDashboard, AiFillBell } from 'react-icons/ai'
+import { FcBookmark , FcLineChart , FcOrgUnit} from 'react-icons/fc'
 
 function Cards() {
   return (
@@ -14,13 +16,9 @@ function Cards() {
       </p>
 
       <div className="cards py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div class="max-w-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img
-              class="rounded-t-lg"
-              src="/docs/images/blog/image-1.jpg"
-              alt=""
-            />
+        <div class="max-w-full m-4 p-4 text-center bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <a href="#" className="flex justify-center p-4">
+          <FcOrgUnit size={'60'}/>
           </a>
           <div class="p-5">
             <a href="#">
@@ -52,13 +50,9 @@ function Cards() {
             </a>
           </div>
         </div>
-        <div class="max-w-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img
-              class="rounded-t-lg"
-              src="/docs/images/blog/image-1.jpg"
-              alt=""
-            />
+        <div class="max-w-full m-4 p-4 text-center bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <a href="#" className="flex justify-center p-4">
+            <FcLineChart size={'60'}/>
           </a>
           <div class="p-5">
             <a href="#">
@@ -90,13 +84,9 @@ function Cards() {
             </a>
           </div>
         </div>
-        <div class="max-w-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img
-              class="rounded-t-lg"
-              src="/docs/images/blog/image-1.jpg"
-              alt=""
-            />
+        <div class="max-w-full m-4 p-4 text-center bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <a href="#"  className="flex justify-center p-4">
+          <FcBookmark size={'60'}/>
           </a>
           <div class="p-5">
             <a href="#">
