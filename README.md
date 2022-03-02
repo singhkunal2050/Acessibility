@@ -7,7 +7,6 @@ herouko/oracle cloud
 API Data Sample
 
 ```
-
 "documentTitle": "singhkunal2050",
 "pageUrl": "https://singhkunal2050.dev/",
 "issues": [
