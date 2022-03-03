@@ -42,6 +42,7 @@ function Navbar() {
         <div className="menu hidden md:flex">
             <Link className="py-2 px-4   hover:bg-gray-100" to="/">Home</Link>
             <Link className="py-2 px-4   hover:bg-gray-100" to="/about">About</Link>
+            <Link className="py-2 px-4   hover:bg-gray-100" to="/login">Login</Link>
             <Link className="py-2 px-4 bg-indigo-600 text-white font-bold hover:bg-indigo-100 hover:text-indigo-600 transition-colors ease-in-out duration-300" to="/tester">Tester</Link>
         </div>
 
@@ -75,6 +76,7 @@ function Navbar() {
         >
             <Link className="py-2 px-4   hover:bg-gray-100" to="/" onClick={toogleSidebar}>Home</Link>
             <Link className="py-2 px-4   hover:bg-gray-100" to="/about"  onClick={toogleSidebar}>About</Link>
+            <Link className="py-2 px-4   hover:bg-gray-100" to="/login"  onClick={toogleSidebar}>Login</Link>
             <Link className="py-2 px-4 bg-indigo-600 text-white font-bold  hover:bg-gray-100" to="/tester" onClick={toogleSidebar}>Tester</Link>
         </div>
       </div>
