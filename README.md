@@ -1,4 +1,12 @@
+[![Website](https://img.shields.io/website?label=Acessibility&style=for-the-badge&url=https://acessibility.netlify.app/)](https://acessibility.netlify.app/)
 # Acessibility
+Webapp to check Acessiblity Related Issues on Any Website.
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%2320232a.svg?style=for-the-badge&logo=vite&logoColor=%2361DAFB)
 
 - project on web accessibility
 react/node/auth/check accessibility
