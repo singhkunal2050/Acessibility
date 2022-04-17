@@ -7,7 +7,7 @@ Webapp to check Acessiblity Related Issues on Any Website.
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%2320232a.svg?style=for-the-badge&logo=vite&logoColor=%2361DAFB)
-![React](https://img.shields.io/badge/react-icons-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React](https://img.shields.io/badge/react icons-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ![Acessibility](https://github.com/singhkunal2050/Acessibility/blob/master/docs/acessibility.png?raw=true)
 
